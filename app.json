@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "JSun Bite",
+    "slug": "jsun-bite",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "jsunbite",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "JSun Bite 需要访问你选择的照片，用来记录这一顿饭。",
+          "cameraPermission": "JSun Bite 需要使用相机拍下这一顿饭。",
+          "microphonePermission": false
+        }
+      ],
+      "expo-notifications"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.jsun.bite"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./public/icon-192.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e1175394-8757-4ad7-9b82-07732fa398ac"
+      }
+    },
+    "owner": "sunnyjin"
+  }
+}

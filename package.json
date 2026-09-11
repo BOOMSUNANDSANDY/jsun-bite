@@ -1,0 +1,42 @@
+{
+  "name": "jsun-bite",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "dev-client": "expo start --dev-client",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:web": "expo export --platform web",
+    "recovery": "node --env-file=.env scripts/recovery-server.mjs",
+    "typecheck": "tsc --noEmit",
+    "check:live": "node scripts/check-live-readiness.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.4",
+    "base64-arraybuffer": "1.0.2",
+    "expo": "~57.0.9",
+    "expo-constants": "~57.0.16",
+    "expo-crypto": "~57.0.2",
+    "expo-dev-client": "~57.0.16",
+    "expo-device": "~57.0.1",
+    "expo-image-manipulator": "~57.0.14",
+    "expo-image-picker": "~57.0.14",
+    "expo-notifications": "~57.0.15",
+    "expo-sqlite": "~57.0.0",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.2",
+    "react-native-svg": "15.15.4",
+    "react-native-url-polyfill": "^3.0.0",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "eas-cli": "^23.0.0",
+    "supabase": "^2.116.0",
+    "typescript": "~6.0.3"
+  }
+}

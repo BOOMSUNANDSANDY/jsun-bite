@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+dist/
+dist-web/
+dist-check/
+preview/
+.env
+.supabase-home/
+.supabase/
+supabase/.temp/
+.supabase-cli.env
+.expo-home/
+*.log
